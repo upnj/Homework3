@@ -1,0 +1,37 @@
+---
+title: "Homework3 - Practice with Control Flow and Functions" author: "Upendra
+Joshi" format: html editor: visual
+---
+In this homework I will practice about Control Flow and how to write Function.
+Functions enhances efficiency in R programming. But First lets practice Control
+Flow 
+
+## Task 1: Control Flow 
+We can take out old data from Homework 2 and load it here. Make sure that the file "hw2_list.rda" is in the working directory. Now load the file in the R environment
+
+```{r}
+load("hw2_list.rda")
+head(bp_list)
+str(bp_list)
+df_bp = bp_list
+```
+The "bp_list" file is in the environment 
+
+1) Suppose we want to characterize the post-treatment (or placebo) blood pressure measurement as
+optimal (≤ 120), borderline (120 < bp ≤ 130), and high (> 130). First, create a new column
+in each data frame from above called status. You can do this via
+
+
+```{r}
+df_bp$treatement$status <- character(20) #as we have 20 observations (see str ouptut above) I used 20 here
+df_bp$placebo$status <- character(10)
+head(df_bp)
+str(df_bp)
+```
+2) For the non-placebo data frame (within the list), create a for loop and use if/then/else logic to
+create the status column’s values.
+
+```{r}
+
+```
+
